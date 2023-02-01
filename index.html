@@ -1,41 +1,81 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Joanne's Online Portfolio">
+    <meta name="author" content="Joanne Wu">
     <title>Joanne Wu's E-Portfolio</title>
+    <style>
+      .blue {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="/index.html">Home</a> |
-        <a href="/aboutme.html">About</a> |
-        <a href="/experience.html">Skills & Experience</a> |
-        <a href="/contact.html">Contact</a> |
-      </nav>
+      <div class="blue">
+        <nav>
+          <a href="/index.html">Home</a> |
+          <a href="/aboutme.html">About</a> |
+          <a href="/experience.html">Skills & Experience</a> |
+          <a href="/contact.html">Contact</a> |
+        </nav>
+      </div>
       <h1>Nice to e-meet you, I'm Joanne Wu!</h1>
-      <h2>I love all things aesthetic, so naturally, frontend has my heart!! </h2>
+      <h2>I love all things <em>aesthetic</em>, so naturally, frontend has my heart!! </h2>
       <h3>Incoming Full Stack Engineer at Nordstrom</h3>
     </header>
+    <br>
     <section id="funfacts">
-      <p>Recently, I have started playing Hearthstone again whenever I'm on the treadmill. Hearthstone: My favorite theorycrafted deck pre lightning bloom nerf</p>
-      <p>These are some pictures of me (Note: you can change the window size to see different pictures!) </p>
+      <h2>Bio</h2>
+      <p>These are some pictures of me <i>(Note: you can change the window size to see different pictures!)</i></p>
       <picture>
         <source media="(min-width:1200px)" srcset="src/me2.png">
         <source media="(min-width:800px)" srcset="src/me3.png">
-        <img src="src/meandjimmy.png" alt="pictures of me" style="width:auto;">
+        <img src="src/meandjimmy.png" alt="pictures of me">
       </picture>
       <p>This is a video of me today with my new haircut and curls.</p>
       <video width="230" height="400" controls>
         <source src="src/me.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
+      <p>Recently, I have started playing Hearthstone again whenever I'm on the treadmill. Hearthstone: My favorite theorycrafted deck pre lightning bloom nerf</p>
+      <img src="src/hs.png" alt="lightning bloom hearthstone deck">
       <p>Here is a song I find really pretty:<br>Do I Wanna Know (Kuma Remix) </p>
       <audio controls>
         <source src="src/kuma.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
     </section>
+    <hr>
+    <section id="skills">
+      <h2>Skills & Experience</h2>
+      <table>
+        <caption><strong>Technical Skills</strong></caption>
+        <colgroup>
+            <col span="2" title="Skills">
+        </colgroup>
+        <tr>
+            <th>Languages</th>
+            <th>Frameworks/Technologies</th>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Airflow</td>
+
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>Kubernetes</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Git</td>
+        </tr>
+    </table>
+    </section>
     <footer>
-      <p>Contact me at 310-989-7462</p>
+      <p>Contact me at <b>310-989-7462</b></p>
     </footer>
   </body>
 </html>
