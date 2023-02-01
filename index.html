@@ -1,9 +1,41 @@
 <!doctype html>
 <html>
   <head>
-    <title>basic html!</title>
+    <title>Joanne Wu's E-Portfolio</title>
   </head>
   <body>
-    <p>uwu</p>
+    <header>
+      <nav>
+        <a href="/index.html">Home</a> |
+        <a href="/aboutme.html">About</a> |
+        <a href="/experience.html">Skills & Experience</a> |
+        <a href="/contact.html">Contact</a> |
+      </nav>
+      <h1>Nice to e-meet you, I'm Joanne Wu!</h1>
+      <h2>I love all things aesthetic, so naturally, frontend has my heart!! </h2>
+      <h3>Incoming Full Stack Engineer at Nordstrom</h3>
+    </header>
+    <section id="funfacts">
+      <p>Recently, I have started playing Hearthstone again whenever I'm on the treadmill. Hearthstone: My favorite theorycrafted deck pre lightning bloom nerf</p>
+      <p>These are some pictures of me (Note: you can change the window size to see different pictures!) </p>
+      <picture>
+        <source media="(min-width:1200px)" srcset="src/me2.png">
+        <source media="(min-width:800px)" srcset="src/me3.png">
+        <img src="src/meandjimmy.png" alt="pictures of me" style="width:auto;">
+      </picture>
+      <p>This is a video of me today with my new haircut and curls.</p>
+      <video width="230" height="400" controls>
+        <source src="src/me.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <p>Here is a song I find really pretty:<br>Do I Wanna Know (Kuma Remix) </p>
+      <audio controls>
+        <source src="src/kuma.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+    <footer>
+      <p>Contact me at 310-989-7462</p>
+    </footer>
   </body>
 </html>
