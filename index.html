@@ -26,6 +26,10 @@
       <section id="funfacts">
         <h2>Bio</h2>
         <p>These are some pictures of me <i>(Note: you can change the window size to see different pictures!)</i></p>
+        <template>
+          <h2>bonus pic</h2>
+          <img src="src/me.jpg">
+        </template>
         <picture>
           <source media="(min-width:1200px)" srcset="src/me2.png">
           <source media="(min-width:800px)" srcset="src/me3.png">
@@ -56,7 +60,10 @@
         <details>
           <summary>Other things I've been up to recently</summary>
           <p>I started playing Hearthstone again, except now I only play when I'm on the treadmill. Below in an image of my favorite theorycrafted deck pre lightning bloom nerf</p>
-          <img src="src/hs.png" alt="lightning bloom hearthstone deck">
+          <figure>
+            <img src="src/hs.png" alt="lightning bloom hearthstone deck">
+            <figcaption>The most fun deck in existence except it doesn't exist anymore :' (</figcaption>
+          </figure>
         </details>
         <p>Here is a song I find really pretty:
           Do I Wanna Know (Kuma Remix)</p>
@@ -98,10 +105,14 @@
           <legend>Best Language</legend>
           <label>Which language out of these is your favorite?</label>
           <select>
-            <option>Python</option>
-            <option>C++</option>
-            <option>Java</option>
-            <option>Can't choose</option>
+            <optgroup label="Decisive answers">
+              <option>Python</option>
+              <option>C++</option>
+              <option>Java</option>
+            </optgroup>
+            <optgroup label="Indecisive answer">
+              <option>Can't choose</option>
+            </optgroup>
           </select>
           <input type="submit" value="Submit">
       </fieldset>
